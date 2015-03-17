@@ -5,8 +5,32 @@
 	<meta charset="UTF-8"/>
 	<title>Canvas Bar Chart</title>
 	<style>
+		body {
+	    	margin: auto;
+	    	background-color: beige;
+		}
+		.header {
+		    background-color: rgb(34,34,34);
+		    color: white;
+		    padding: 15px;
+		    text-align: center;
+		    margin: 0 0 20px 0;
+		}
+		canvas {
+			padding: 15px;
+			margin: 0 0 0 20px;
+			border: 1px solid silver;
+			border-radius: 3px;
+		}
+		h3 {
+
+		    margin: auto;
+		}
 		h2 {
 			color: maroon
+		}
+		.content{
+			padding: 0 0 0 20px;
 		}
 		.shoes {
 			background-color: green;
@@ -44,10 +68,11 @@
 </head>
 
 <body>
-	<h2>Sales 2014</h2>
-	<canvas id="canvas" width="500" height="300" style="border-radius: 3px; padding: 15px; border: 1px solid silver;"></canvas>
+<div class="header"><h3>Bar Graph Sample wit HTML5  Canvas Element</h3></div>
+	<h2 class="content">Sales 2014</h2>
+	<canvas id="canvas" width="500" height="300"></canvas>
 	<div></div>
-	<div>
+	<div class="content">
 		<span id="shoes" class="shoes"></span>
 		<span>Shoes</span>
 		<span class="clothes"></span>
